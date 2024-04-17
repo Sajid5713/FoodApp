@@ -1,10 +1,26 @@
+import React, { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import Header from './Components/Header';
+import Body from './Components/Body';
+import Footer from './Components/Footer';
 
-const App = () => {
+const AppLayout = () => {
 
+    return(
+        <>
+        <StrictMode>
+            <Header/>
+            <Body/>
+            <Footer/>
+        </StrictMode>
+      
+        </>
+      
+    )
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+root.render(<AppLayout/>);
 
 

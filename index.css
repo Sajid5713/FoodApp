@@ -1,0 +1,37 @@
+@tailwind base;
+@layer base{
+    h1{
+        @apply text-2xl;
+        @apply font-bold;
+        @apply mb-3;
+    }
+    h2{
+        @apply text-xl;
+        @apply font-bold;
+        @apply mb-2;
+    }
+    h3{
+        @apply text-lg;
+        @apply font-bold;
+        @apply mb-2;
+    }
+    h4{
+        @apply text-base;
+        @apply font-semibold;
+        @apply mb-2;
+    }
+
+    a{
+        @apply hover:text-[#E61B48];
+    }
+
+    p{
+
+    }
+    button{
+        @apply px-2 py-1 border bg-[#e61b48] hover:scale-[.95] transition-all;
+        @apply text-white rounded-full text-[13px] font-semibold duration-200 ease-in-out;
+    }
+}
+@tailwind components;
+@tailwind utilities;
