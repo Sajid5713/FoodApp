@@ -1,6 +1,7 @@
 import { LiaHomeSolid , LiaInfoSolid , LiaPhoneSolid, LiaShoppingBagSolid, LiaBarsSolid ,LiaTimesCircle  } from "react-icons/lia";
 import Logo from '../img/Logo.svg';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [showMenu,setShowMenu] = useState(false);
@@ -21,19 +22,19 @@ const Header = () => {
                         <div className='desktop-menu hidden md:flex'>
                             <ul className='flex gap-4 text-center items-center'>
                                 <li>
-                                    <a href='/' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
+                                    <Link to='/' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
                                     <i className='text-2xl'> <LiaHomeSolid /></i>
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/About' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
+                                    <Link to='/about' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
                                     <i className='text-2xl'>  <LiaInfoSolid/></i>
                                         About
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='#' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
+                                    <a href='/contact' className='flex items-center flex-col hover:scale-105 hover:text-[#E61B48] transition ease-in-out duration-300 p-4 inline-block text-md' >
                                     <i className='text-2xl'> <LiaPhoneSolid /></i>
                                         Contact
                                     </a>
